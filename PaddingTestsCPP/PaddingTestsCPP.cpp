@@ -35,10 +35,9 @@ void printBits(int64_t num) {
 
 int main()
 {
-    NetLayoutMap::Init();
-    std::vector<int> Layout;
-
+    MNet::Init();
     
+    std::vector<int> Layout;
     MNet8::AddPacketField<Layout1>(&Layout);//0
     
 

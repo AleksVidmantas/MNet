@@ -16,7 +16,10 @@ public:
     
     
 
-    
+    static void Init()
+    {
+        NetLayoutMap::Init();
+    }
    
 };
 
@@ -35,6 +38,8 @@ public:
     {
         return NetLayout<Net8PayloadSize>::GetBitfieldSize(Layout);
     }
+
+   
 };
 
 
